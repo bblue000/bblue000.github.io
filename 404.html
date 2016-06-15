@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<title>For The Lost</title>
+	<script type="text/javascript" src="assets/404/jquery.min.js"></script>
+	<style type="text/css">
+	html, body { width: 100%; height: 100%; overflow: hidden; }
+	body { 
+		background: url('assets/404/bg.jpg'); 
+		-webkit-background-size: cover;
+	    -moz-background-size: cover;
+	    -o-background-size: cover;
+	    background-size: cover;
+	    background-position: center center; 
+	    min-width: 480px;
+	}
+
+	body { color: #ccc; font-size: 16px; font-family: "Microsoft Yahei", Helvetica, Arial, Verdana, sans-serif; }
+
+	a { color: #ccc; font-weight: bold; text-decoration: none; border: 1px solid #fff; }
+
+	#tip { margin: 0px 20px; }
+
+	#tip {
+	  text-shadow: 0 0 10px #DDD,
+	               0 0 20px  #888,
+	               0 0 30px  #333,
+	               0 0 40px  #228DFF
+	}
+	</style>
+</head>
+<body>
+
+	<div id="tip">
+	<h1>For The Lost</h1>
+
+	<p>
+	你已迷失了方向，而我将指引你，——我的子民！
+	</p>
+	<p>
+	契约即将缔结，<a href="/" target="_self">肉体自此离去</a>，——留下你的魂灵！
+	</p>
+	</div>
+
+	<script type="text/javascript">
+	function __resized() {
+		var tip = $('#tip');
+		var wh = $(window).height();
+		var h = tip.height();
+		var targetTop = wh / 2 - h / 2;
+		tip.css({
+			'position': 'relative',
+			'top': targetTop + 'px'
+		});
+	}
+	__resized();
+	$(window).resize(function() {
+    	__resized();
+	});
+	</script>
+</body>
+</html>

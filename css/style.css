@@ -974,13 +974,16 @@ a {
 }
 .article-entry p code,
 .article-entry li code {
-  padding: 1px 3px;
+  padding: 2px 4px;
   margin: 0 3px;
-  background: #ddd;
-  border: 1px solid #ccc;
+  background: #fdf6e3;
+  border: 0;
   font-family: Menlo, Monaco, "Andale Mono", "lucida console", "Courier New", monospace;
-  word-wrap: break-word;
   font-size: 14px;
+  color: #657b83;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+  word-wrap: break-word;
+  white-space: pre;
 }
 .article-entry blockquote {
   background: #ddd;
